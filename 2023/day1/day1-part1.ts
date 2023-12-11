@@ -1,6 +1,7 @@
 import fs from "fs";
+import path from "path";
 
-const input = fs.readFileSync("../input/input-part1.txt", "utf8").split("\n");
+const input = fs.readFileSync(path.join(__dirname, "input-part1.txt"), "utf-8").split("\n");
 
 function getDigits(): string[][] {
     return input.map((line) => {

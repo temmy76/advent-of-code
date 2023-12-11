@@ -1,6 +1,7 @@
 import fs from "fs";
+import path from "path";
 
-const input = fs.readFileSync("./input/input-part2.txt", "utf-8").split("\n");
+const input = fs.readFileSync(path.join(__dirname, "input-part2.txt"), "utf-8").split("\n");
 
 const digitText = new Map<string, string>([
     ["one", "1"],
